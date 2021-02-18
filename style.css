@@ -20,6 +20,37 @@ body {
 	padding: 40px 0;
 }
 
+.logo {
+	/* Рисуем круги сами */
+	padding-left: 44px;
+	position: relative;
+	font: bold 24px/31px 'Pt Serif', Arial, Helvetica, Sans-serif;
+}
+
+/* Основные свойства для обоих кругов */
+.logo__circle {
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	opacity: .7;
+}
+
+/* Верхний кружок */
+.logo__circle_color_dark_blue {
+	background-color: #0056EC;
+}
+
+/* Нижний кружок */
+.logo__circle_color_blue {
+	left: 8px;
+	top: 56%;
+	background-color: #C8DBFB;
+}
+
 .menu__item {
 	padding: 0 13px;
 }
