@@ -8,7 +8,7 @@ body {
 
 .wrapper {
 	margin: auto;
-	width: 80%;
+	width: 79%;
 }
 
 .header__container {
@@ -150,14 +150,14 @@ body {
 
 /* Основной блок main-section */
 .main__container {
-	padding-right: 67%;
+	padding-right: 66%;
 	padding-bottom: 150px;
 	background: no-repeat top right url(img/bgc.svg);
 }
 
 .main__title {
-	padding-top: 75px;
-	margin-bottom: 34px;
+	padding-top: 76px;
+	margin-bottom: 35px;
 	letter-spacing: 2px;
 	font: bold 66px/87px 'Pt Serif', Arial, Helvetica, Sans-serif;
 }
@@ -175,7 +175,7 @@ body {
 
 .main__btn {
 	display: inline-block;
-	padding: 18px 30px;
+	padding: 18px 19px;
 	font-size: 18px;
 	line-height: 21px;
 	text-decoration: none;
