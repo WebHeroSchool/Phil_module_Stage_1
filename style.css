@@ -11,13 +11,15 @@ body {
 	width: 80%;
 }
 
-.header__container, .main__conteiner {
+.header__container {
 	display: flex;
 	justify-content: space-between;
 }
 
+/* Header */
 .header {
-	padding: 40px 0;
+	padding: 28px 0;
+	margin-bottom: 140px;
 }
 
 .logo {
@@ -51,9 +53,15 @@ body {
 	background-color: #C8DBFB;
 }
 
+/* Меню */
+.menu {
+	display: flex;
+	align-items: center;
+}
+
 .menu__item {
 	position: relative;
-	margin-right: 26px;
+	margin-right: 42px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
@@ -67,7 +75,7 @@ body {
 }
 
 
- /* .menu__item::after {
+ .menu__item::after {
 	position: absolute;
 	left: 0;
 	display: block;
@@ -76,9 +84,8 @@ body {
 	height: 3px;
 	background-color: #0056EC;
 	transition: opacity .5s, width .5s;
-} */
+}
 
-/* Способ из урока
 .menu__item__active::after {
 	position: absolute;
 	left: 0;
@@ -89,15 +96,17 @@ body {
 	background-color: #0056EC;
 }
 
-
-
 .menu__item:hover::after, .menu__item__active:hover::after{
 	opacity: 1;
 	width: 100%;
-} */
+}
+
+.menu__item:hover {
+	opacity: .8;
+}
 
 
-.menu__item:before, .menu__item:after{
+/* .menu__item:before, .menu__item:after{
 	content: '';
 	width: 0;
 	height: 3px;
@@ -123,13 +132,11 @@ body {
 	position: absolute;
 	top: 120%;
 	transition: .5s;
-}
+} */
 
-.menu__item:hover {
-	opacity: .8;
-}
 
-.menu__item:hover:before{
+
+/* .menu__item:hover:before{
 	width: 50%;
 	transform: translateX(100%);
 }
@@ -137,5 +144,47 @@ body {
 .menu__item:hover:after{
 	width: 50%;
 	transform: translateX(-100%);
+} */
+
+
+
+/* Основной блок main-section */
+.main__container {
+	padding-right: 67%;
+	padding-bottom: 150px;
+	background: no-repeat top right url(img/bgc.svg);
 }
 
+.main__title {
+	padding-top: 75px;
+	margin-bottom: 34px;
+	letter-spacing: 2px;
+	font: bold 66px/87px 'Pt Serif', Arial, Helvetica, Sans-serif;
+}
+
+.main__title_bg {
+	background-color: #ECF3FF;
+}
+
+.main__subtitle {
+	margin-bottom: 40px;
+	width: 455px;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+.main__btn {
+	display: inline-block;
+	padding: 18px 30px;
+	font-size: 18px;
+	line-height: 21px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #0056EC;
+	border-radius:	4px;	
+	transition: transform .5s;
+}
+
+.main__btn:hover {
+	transform: scale(1.2);
+}
