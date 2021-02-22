@@ -15,31 +15,41 @@
 	<header class="header">
 		<div class="wrapper header__container">
 			<div class="logo">
-				<!-- Подключение лого через картинку -->
-				<!-- <img src="img/logo.svg" alt="app.creation"> -->
-				 <!-- Подключение лого через текст  -->
 				 <div class="logo__circle logo__circle_color_dark_blue"></div>
 				 <div class="logo__circle logo__circle_color_blue"></div>
 				app.creation
 			</div>
+			
+			<div class="burger-menu">
+				<input type="checkbox" id="menu__toogle">
+				<label for="menu__toogle" class="menu__btn">
+					<span class="menu__btn__check"></span>
+				</label>
+
+				<div class="menu__box">
+					<a href="#" class="burger-menu__item">start</a>
+					<a href="#" class="burger-menu__item">services</a>
+					<a href="#" class="burger-menu__item">about</a>
+					<a href="#" class="burger-menu__item">blog</a>
+					<a href="#" class="burger-menu__item">contact us</a>
+				</div>
+			</div>
+
 			<nav class="menu header__menu">
 				<a href="#" class="menu__item">start</a>
-				<a href="#" class="menu__item">services</a>
+				<a href="#" class="menu__item menu__item__active">services</a>
 				<a href="#" class="menu__item">about</a>
 				<a href="#" class="menu__item">blog</a>
 				<a href="#" class="menu__item">contact us</a>
 			</nav>
 		</div>
 	</header>
-	<main class="main-section">
-		<div class="wrapper main__conteiner">
-			<section class="main-content">
-				<h1 class="main-content__title">Building an App Without Design Expertise?</h1>
-				<p class="main-content__descr">I help tech startups design better digital products without hiring a full-time designer</p>
-				<a href="#" class="btn main-content__btn">Schedule free consultation</a>
-			</section>
-			<div class="image-content">
-				<img src="#" class="image-content__image" alt="Окно разработки сайта" >
+	<main class="main">
+		<div class="wrapper">
+			<div class="main__container">
+				<h1 class="main__title">Building an App <span class="main__title_bg">Without Design Expertise?</span></h1>
+				<p class="main__subtitle">I help tech startups design better digital products without hiring a&nbsp;full-time designer</p>
+				<a href="#" class="main__btn">Schedule free consultation</a>
 			</div>
 		</div>
 	</main>
