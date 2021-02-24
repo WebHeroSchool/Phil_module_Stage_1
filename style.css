@@ -8,7 +8,7 @@ body {
 
 .wrapper {
 	margin: auto;
-	width: 79%;
+	width: 80%;
 }
 
 .header__container {
@@ -18,8 +18,8 @@ body {
 
 /* Header */
 .header {
-	padding: 28px 0;
-	margin-bottom: 140px;
+	padding: 40px 0;
+	margin-bottom: 130px;
 }
 
 .logo {
@@ -200,7 +200,7 @@ body {
 }
 
 .main__title {
-	padding-top: 15%;
+	padding-top: 14%;
 	margin-bottom: 35px;
 	letter-spacing: 2px;
 	font: bold 66px/87px 'Pt Serif', Arial, Helvetica, Sans-serif;
@@ -211,15 +211,15 @@ body {
 }
 
 .main__subtitle {
-	margin-bottom: 40px;
-	width: 90%;
+	margin-bottom: 42px;
+	width: 89%;
 	font-size: 22px;
 	line-height: 26px;
 }
 
 .main__btn {
 	display: inline-block;
-	padding: 18px 19px;
+	padding: 18px 24px;
 	font-size: 18px;
 	line-height: 21px;
 	text-decoration: none;
@@ -286,6 +286,7 @@ body {
 @media (max-width: 1380px) {
 
 	.main__subtitle {
+		margin-bottom: 40px;
 		font-size: 18px;
 		line-height: 21px;
 	}
@@ -326,7 +327,8 @@ body {
 	}
 
 	.main__container {
-		padding: 0 25px 50px;
+		padding-bottom: 50px;
+		padding-right: 0;
 		background-size: 65%;
 		background-position: top center;
 		text-align: center;
@@ -368,16 +370,18 @@ body {
 
 	.main__container {
 		padding-bottom: 50px;
-		background-size: 85%;
+		background-size: 86%;
 	}
 
 	.main__title {
-		padding-top: 95%;
+		padding: 80% 5% 0;
 		font-size: 30px;
 		line-height: 40px;
 	}
 
 	.main__subtitle {
+		padding-left: 10px;
+		padding-right: 10px;
 		font-size: 16px;
 		line-height: 19px;
 	}
