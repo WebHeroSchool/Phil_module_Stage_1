@@ -178,8 +178,7 @@ body {
 .burger-menu__item {
 	position: relative;
 	display: block;
-	margin-bottom: 14px;
-	padding: 10px 0;
+	margin-bottom: 23px;
 	text-align: center;
 	font-size: 30px;
 	color: #000;
@@ -339,7 +338,8 @@ body {
 	}
 
 	.main__subtitle {
-		width: 100%;
+		width: 79%;
+		margin: 0 auto 8%;
 	}
 }
 
@@ -355,6 +355,7 @@ body {
 	.main__title {
 		font-size: 40px;
 		line-height: 55px;
+		letter-spacing: normal;
 	}
 }
 
@@ -374,14 +375,13 @@ body {
 	}
 
 	.main__title {
-		padding: 80% 5% 0;
+		padding-top: 80%;
+		margin-bottom: 10%;
 		font-size: 30px;
 		line-height: 40px;
 	}
 
 	.main__subtitle {
-		padding-left: 10px;
-		padding-right: 10px;
 		font-size: 16px;
 		line-height: 19px;
 	}
