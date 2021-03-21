@@ -7,8 +7,8 @@ body { font-family: 'Roboto', sans-serif; }
   width: 80%;
 }
 
-.header__container, 
-.main__conteiner {
+.main__conteiner, 
+.header__container {
   display: flex;
   justify-content: space-between;
 }
