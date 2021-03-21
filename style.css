@@ -1,34 +1,20 @@
-* {
-	margin: 0;
-}
+* {margin: 0;}
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
+body {font-family: 'Roboto', sans-serif;}
 
 .wrapper {
-	margin: auto;
-	width: 80%;
+  margin: auto;
+  width: 80%;
 }
 
-.header__container, .main__conteiner {
-	display: flex;
-	justify-content: space-between;
+.header__container, 
+.main__conteiner {
+  display: flex;
+  justify-content: space-between;
 }
 
-.header {
-	padding: 40px 0;
-}
+.header {padding: 40px 0;}
 
-.menu__item {
-	padding: 0 13px;
-}
+.menu__item {padding: 0 13px;}
 
-.menu__item:last-child {
-	padding-right: 0;
-}
-
-
-
-
-
+.menu__item:last-child {padding-right: 0;}
