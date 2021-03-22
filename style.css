@@ -1,65 +1,20 @@
-* {
-	margin: 0;
-}
+* { margin: 0; }
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
+body { font-family: 'Roboto', sans-serif; }
 
 .wrapper {
-	margin: auto;
-	width: 80%;
+  margin: auto;
+  width: 80%;
 }
 
-.header__container, .main__conteiner {
-	display: flex;
-	justify-content: space-between;
+.main__conteiner,
+.header__container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.header {
-	padding: 40px 0;
-}
+.header { padding: 40px 0; }
 
-.logo {
-	/* Рисуем круги сами */
-	padding-left: 44px;
-	position: relative;
-	font: bold 24px/31px 'Pt Serif', Arial, Helvetica, Sans-serif;
-}
+.menu__item { padding: 0 13px; }
 
-/* Основные свойства для обоих кругов */
-.logo__circle {
-	width: 28px;
-	height: 28px;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-	border-radius: 50%;
-	opacity: .7;
-}
-
-/* Верхний кружок */
-.logo__circle_color_dark_blue {
-	background-color: #0056EC;
-}
-
-/* Нижний кружок */
-.logo__circle_color_blue {
-	left: 8px;
-	top: 56%;
-	background-color: #C8DBFB;
-}
-
-.menu__item {
-	padding: 0 13px;
-}
-
-.menu__item:last-child {
-	padding-right: 0;
-}
-
-
-
-
-
+.menu__item:last-child { padding-right: 0; }
