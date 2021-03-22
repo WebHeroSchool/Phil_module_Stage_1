@@ -15,6 +15,12 @@ body { font-family: 'Roboto', sans-serif; }
 
 .header { padding: 40px 0; }
 
+.logo {
+	font-family: 'Pt serif', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
 .menu__item { padding: 0 13px; }
 
 .menu__item:last-child { padding-right: 0; }
