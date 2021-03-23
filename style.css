@@ -1,17 +1,14 @@
-* {
-	margin: 0;
-}
+* { margin: 0; }
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
+body { font-family: 'Roboto', sans-serif; }
 
 .wrapper {
 	margin: auto;
 	width: 80%;
 }
 
-.header__container, .main__conteiner {
+.header__container,
+.main__conteiner {
 	display: flex;
 	justify-content: space-between;
 }
@@ -29,20 +26,18 @@ body {
 
 /* Основные свойства для обоих кругов */
 .logo__circle {
-	width: 28px;
-	height: 28px;
 	position: absolute;
 	top: 50%;
 	left: 0;
+	width: 28px;
+	height: 28px;
 	transform: translateY(-50%);
 	border-radius: 50%;
 	opacity: .7;
 }
 
 /* Верхний кружок */
-.logo__circle_color_dark_blue {
-	background-color: #0056EC;
-}
+.logo__circle_color_dark_blue { background-color: #0056EC; }
 
 /* Нижний кружок */
 .logo__circle_color_blue {
@@ -62,10 +57,7 @@ body {
 	transition: opasity .5s;
 }
 
-.menu__item:last-child {
-	margin-right: 0;
-}
-
+.menu__item:last-child { margin-right: 0; }
 
  /* .menu__item::after {
 	position: absolute;
@@ -89,20 +81,18 @@ body {
 	background-color: #0056EC;
 }
 
-
-
 .menu__item:hover::after, .menu__item__active:hover::after{
 	opacity: 1;
 	width: 100%;
 } */
 
-
-.menu__item:before, .menu__item:after{
-	content: '';
-	width: 0;
-	height: 3px;
+.menu__item:before,
+.menu__item:after {
 	position: absolute;
 	top: 120%;
+	content: '';
+	width: 0;
+	height: 3px;	
 	transition: .5s;
 	mix-blend-mode: multiply;
 }
@@ -116,18 +106,18 @@ body {
 	right: 0;
 	background-color: #f600d5;
 }
-.menu__item__active:before, .menu__item__active::after {
+
+.menu__item__active:before,
+.menu__item__active::after {
+	position: absolute;
+	top: 120%;
 	content: '';
 	width: 50%;
 	height: 3px;
-	position: absolute;
-	top: 120%;
 	transition: .5s;
 }
 
-.menu__item:hover {
-	opacity: .8;
-}
+.menu__item:hover { opacity: .8; }
 
 .menu__item:hover:before{
 	width: 50%;
@@ -138,4 +128,3 @@ body {
 	width: 50%;
 	transform: translateX(-100%);
 }
-
