@@ -59,7 +59,7 @@ body { font-family: 'Roboto', sans-serif; }
 
 .menu__item:last-child { margin-right: 0; }
 
- /* .menu__item::after {
+ .menu__item::after {
 	position: absolute;
 	left: 0;
 	display: block;
@@ -68,9 +68,9 @@ body { font-family: 'Roboto', sans-serif; }
 	height: 3px;
 	background-color: #0056EC;
 	transition: opacity .5s, width .5s;
-} */
+} 
 
-/* Способ из урока
+/* Способ из урока */
 .menu__item__active::after {
 	position: absolute;
 	left: 0;
@@ -81,12 +81,13 @@ body { font-family: 'Roboto', sans-serif; }
 	background-color: #0056EC;
 }
 
-.menu__item:hover::after, .menu__item__active:hover::after{
+.menu__item:hover::after,
+.menu__item__active:hover::after{
 	opacity: 1;
 	width: 100%;
-} */
+}
 
-.menu__item:before,
+/* .menu__item:before,
 .menu__item:after {
 	position: absolute;
 	top: 120%;
@@ -122,9 +123,9 @@ body { font-family: 'Roboto', sans-serif; }
 .menu__item:hover:before{
 	width: 50%;
 	transform: translateX(100%);
-}
+} 
 
 .menu__item:hover:after{
 	width: 50%;
 	transform: translateX(-100%);
-}
+} */
