@@ -1,10 +1,6 @@
-* {
-	margin: 0;
-}
+* { margin: 0; }
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
+body { font-family: 'Roboto', sans-serif; }
 
 .wrapper {
 	margin: auto;
@@ -31,20 +27,18 @@ body {
 
 /* Основные свойства для обоих кругов */
 .logo__circle {
-	width: 28px;
-	height: 28px;
 	position: absolute;
 	top: 50%;
 	left: 0;
+	width: 28px;
+	height: 28px;
 	transform: translateY(-50%);
 	border-radius: 50%;
 	opacity: .7;
 }
 
 /* Верхний кружок */
-.logo__circle_color_dark_blue {
-	background-color: #0056EC;
-}
+.logo__circle_color_dark_blue { background-color: #0056EC; }
 
 /* Нижний кружок */
 .logo__circle_color_blue {
@@ -70,9 +64,7 @@ body {
 	transition: opasity .5s;
 }
 
-.menu__item:last-child {
-	margin-right: 0;
-}
+.menu__item:last-child { margin-right: 0; }
 
  .menu__item::after {
 	position: absolute;
@@ -95,24 +87,18 @@ body {
 	background-color: #0056EC;
 }
 
-.menu__item:hover::after, 
+.menu__item:hover::after,
 .menu__item__active:hover::after {
 	opacity: 1;
 	width: 100%;
 }
 
-.menu__item:hover {
-	opacity: .8;
-}
+.menu__item:hover { opacity: .8; }
 
 /* Меню бургер */
-#menu__toogle {
-	display: none;
-}
+#menu__toogle { display: none; }
 
-#menu__toogle:checked ~ .menu__btn > .menu__btn__check {
-	transform: rotate(45deg);
-}
+#menu__toogle:checked ~ .menu__btn > .menu__btn__check { transform: rotate(45deg); }
 
 #menu__toogle:checked ~ .menu__btn > .menu__btn__check:before {
 	top: 0;
@@ -139,11 +125,11 @@ body {
 	z-index: 1;
 }
 
-.menu__btn__check, 
-.menu__btn__check::before, 
+.menu__btn__check,
+.menu__btn__check::before,
 .menu__btn__check::after {
-	display: block;
 	position: absolute;
+	display: block;
 	width: 100%;
 	height: 3px;
 	background-color:#0056EC;
@@ -162,7 +148,6 @@ body {
 
 .menu__box {
 	display: block;
-	visibility: hidden;
 	position: fixed;
 	top: -100%;
 	left: 0;
@@ -170,7 +155,7 @@ body {
 	padding: 186px 0;
 	width: 100%;
 	height: 100%;
-	
+	overflow: hidden;
 	background-color: #fff;
 	transition: visibility .5s, top .5s;
 }
@@ -205,9 +190,7 @@ body {
 	font: bold 66px/87px 'Pt Serif', Arial, Helvetica, Sans-serif;
 }
 
-.main__title_bg {
-	background-color: #ECF3FF;
-}
+.main__title_bg { background-color: #ECF3FF; }
 
 .main__subtitle {
 	margin-bottom: 42px;
@@ -228,41 +211,29 @@ body {
 	transition: transform .5s;
 }
 
-.main__btn:hover {
-	transform: scale(1.2);
-}
+.main__btn:hover { transform: scale(1.2); }
 
 @media(max-width: 1815px) {
-	.main__container {
-		padding-right: 63%;
-	}
+	.main__container { padding-right: 63%; }
 }
 
 @media(max-width: 1715px) {
-	.main__container {
-		padding-right: 61%;
-	}
+	.main__container { padding-right: 61%; }
 }
 
 @media(max-width: 1628px) {
-	.main__container {
-		padding-right: 59%;
-	}
+	.main__container { padding-right: 59%; }
 }
 
 @media (max-width: 1580px) {
-	.wrapper {
-		width: 68%;
-	}
+	.wrapper { width: 68%; }
 
 	.header {
 		padding: 42px 0;
 		margin-bottom: 82px;
 	}
 	
-	.menu__item {
-		margin-right: 27px;
-	}
+	.menu__item { margin-right: 27px; }
 
 	.main__container {
 		padding-right: 55%;
@@ -276,14 +247,10 @@ body {
 		line-height: 66px;
 	}
 
-	.main__subtitle {
-		font-size: 20px;
-	}
-
+	.main__subtitle { font-size: 20px; }
 }
 
 @media (max-width: 1380px) {
-
 	.main__subtitle {
 		margin-bottom: 40px;
 		font-size: 18px;
@@ -298,25 +265,18 @@ body {
 }
 
 @media (max-width: 1266px) {
-	.wrapper{
-		width: 91%;
-	}
+	.wrapper{ width: 91%; }
 
-	.header {
-		margin-bottom: 80px;
-	}
+	.header { margin-bottom: 80px; }
 
 	.main__subtitle {
-		width: 75%;
 		margin-bottom: 41px;
+		width: 75%;
 	}
 }
 
 @media(max-width: 1115px) {
-	.main__subtitle {
-		width: 85%;
-		margin-bottom: 41px;
-	}
+	.main__subtitle { width: 85%; }
 }
 
 @media (max-width: 985px) {
@@ -333,9 +293,7 @@ body {
 		text-align: center;
 	}
 
-	.main__title {
-		padding-top: 65%;
-	}
+	.main__title { padding-top: 65%; }
 
 	.main__subtitle {
 		width: 79%;
@@ -344,13 +302,9 @@ body {
 }
 
 @media (max-width: 750px) {
-	.menu {
-		display: none;
-	}
+	.menu { display: none; }
 
-	.menu__btn {
-		display: flex;
-	}
+	.menu__btn { display: flex; }
 
 	.main__title {
 		font-size: 40px;
@@ -359,15 +313,10 @@ body {
 	}
 }
 
-
 @media (max-width: 450px) {
-	.wrapper {
-		width: 87%;
-	}
+	.wrapper { width: 87%; }
 
-	.logo {
-		color: #fff;
-	}
+	.logo { color: #fff; }
 
 	.main__container {
 		padding-bottom: 50px;
