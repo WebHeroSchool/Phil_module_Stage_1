@@ -14,8 +14,8 @@ body { font-family: 'Roboto', sans-serif; }
 
 /* Header */
 .header {
-	padding: 28px 0;
-	margin-bottom: 140px;
+	padding: 40px 0;
+	margin-bottom: 130px;
 }
 
 .logo {
@@ -99,6 +99,7 @@ body { font-family: 'Roboto', sans-serif; }
 .main__container {
 	padding-right: 66%;
 	padding-bottom: 150px;
+	margin-bottom: 150px;
 	background: no-repeat top right url(img/bgc.svg);
 }
 
@@ -112,7 +113,7 @@ body { font-family: 'Roboto', sans-serif; }
 .main__title_bg { background-color: #ECF3FF; }
 
 .main__subtitle {
-	margin-bottom: 40px;
+	margin-bottom: 41px;
 	width: 455px;
 	font-size: 22px;
 	line-height: 26px;
@@ -120,7 +121,7 @@ body { font-family: 'Roboto', sans-serif; }
 
 .main__btn {
 	display: inline-block;
-	padding: 18px 19px;
+	padding: 18px 21px;
 	font-size: 18px;
 	line-height: 21px;
 	text-decoration: none;
