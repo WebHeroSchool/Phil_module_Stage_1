@@ -106,7 +106,7 @@ body { font-family: 'Roboto', sans-serif; }
 
 /* Основной блок main-section */
 .main__container {
-	padding-right: 66%;
+	padding-right: 50%;
 	padding-bottom: 150px;
 	margin-bottom: 120px;
 	background: no-repeat top right url(img/bgc.svg);
@@ -115,14 +115,16 @@ body { font-family: 'Roboto', sans-serif; }
 .main__title {
 	padding-top: 76px;
 	margin-bottom: 35px;
+	margin-left: 6px;
 	letter-spacing: 3px;
 	font: bold 66px/87px 'Pt Serif', Arial, Helvetica, Sans-serif;
+	
 }
 
 .main__title_bg { 
-	margin-left: 6px;
-	background-color: #ECF3FF; 
+	background: linear-gradient(to bottom, #fff 10%, #ECF3FF 20%);
 }
+
 
 .main__subtitle {
 	margin-bottom: 41px;
