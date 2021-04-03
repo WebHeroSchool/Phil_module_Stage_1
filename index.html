@@ -5,31 +5,39 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts.css">
 	<link rel="stylesheet" href="style.css">
 	<title>Структура сайта</title>
 </head>
 <body>
-	
 	<header class="header">
 		<div class="wrapper header__container">
-			<div class="logo">app.creation</div>
+			<div class="logo">
+				 <div class="logo__circle logo__circle_color_dark_blue"></div>
+				 <div class="logo__circle logo__circle_color_blue"></div>
+				app.creation
+			</div>
 			<nav class="menu header__menu">
 				<a href="#" class="menu__item">start</a>
-				<a href="#" class="menu__item">services</a>
+				<a href="#" class="menu__item menu__item__active">services</a>
 				<a href="#" class="menu__item">about</a>
 				<a href="#" class="menu__item">blog</a>
 				<a href="#" class="menu__item">contact us</a>
 			</nav>
 		</div>
 	</header>
-	<main class="main-section">
-		<section class="main-content">
-			<h1 class="main-content__title">Building an App Without Design Expertise?</h1>
-			<p class="main-content__descr">I help tech startups design better digital products without hiring a full-time designer</p>
-			<a href="#" class="btn main-content__btn">Schedule free consultation</a>
-		</section>
-		<div class="image-content">
-			<img src="#" class="image-content__image" alt="Окно разработки сайта" >
+	<main class="main">
+		<div class="wrapper">
+			<div class="main__container">
+				<h1 class="main__title">Building an App <span class="main__title_bg">Without Design Expertise</span>?</h1>
+				<p class="main__subtitle">I help tech startups design better digital products without hiring a full-time designer</p>
+				<a href="#" class="main__btn">Schedule free consultation</a>
+			</div>
+			<ul class="main__slider">
+				<li class="main__slider__item"><a href="#" class="main__slider__btn"></a></li>
+				<li class="main__slider__item"><a href="#" class="main__slider__btn"></a></li>
+				<li class="main__slider__item"><a href="#" class="main__slider__btn"></a></li>
+			</ul>
 		</div>
 	</main>
 </body>
