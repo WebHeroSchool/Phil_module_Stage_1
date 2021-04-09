@@ -1,4 +1,4 @@
-* { 
+* {
 	margin: 0; 
 	box-sizing: border-box;
 }
@@ -18,7 +18,7 @@ body { font-family: 'Roboto', sans-serif; }
 /* Header */
 .header {
 	padding: 43px 0;
-	margin-bottom: 127px;
+	margin-bottom: 125px;
 }
 
 .logo {
@@ -26,7 +26,11 @@ body { font-family: 'Roboto', sans-serif; }
 	padding-left: 50px;
 	position: relative;
 	transform: translateY(-2px);
-	font: bold 24px/31px 'Pt Serif', Arial, Helvetica, Sans-serif;
+	font: bold 24px/31px 'Pt Serif',
+		Arial,
+		Helvetica,
+		Sans-serif;
+	letter-spacing: 1px;
 }
 
 /* Основные свойства для обоих кругов */
@@ -42,13 +46,13 @@ body { font-family: 'Roboto', sans-serif; }
 }
 
 /* Верхний кружок */
-.logo__circle_color_dark_blue { background-color: #0056EC; }
+.logo__circle_color_dark_blue { background-color: #0056ec; }
 
 /* Нижний кружок */
 .logo__circle_color_blue {
 	left: 12px;
 	top: 20px;
-	background-color: #C8DBFB;
+	background-color: #c8dbfb;
 }
 
 /* Меню */
@@ -59,7 +63,6 @@ body { font-family: 'Roboto', sans-serif; }
 
 .menu__item {
 	position: relative;
-	margin-right: 22px;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 21px;
@@ -68,12 +71,15 @@ body { font-family: 'Roboto', sans-serif; }
 	transition: opasity .5s;
 }
 
-.menu__item:nth-child(2) { margin-right: 23px; }
+.menu__item:nth-child(1) { margin-right: 26px; }
+
+.menu__item:nth-child(2) { margin-right: 25px; }
 
 .menu__item:nth-child(3),
-.menu__item:nth-child(4) { margin-right: 30px; }
+.menu__item:nth-child(4) { margin-right: 27px; }
 
 .menu__item:last-child { margin-right: 10px; }
+
 
  .menu__item::after {
 	position: absolute;
@@ -201,10 +207,10 @@ body { font-family: 'Roboto', sans-serif; }
 	font: bold 66px/87px 'Pt Serif', Arial, Helvetica, Sans-serif;
 }
 
-.main__title_bg { background: linear-gradient(to bottom, #fff 10%, #ECF3FF 20%); }
+.main__title_bg { background: linear-gradient(180deg, rgba(255, 255, 255, 1), #ECF3FF 15%); }
 
 .main__subtitle {
-	margin-bottom: 38px;
+	margin-bottom: 40px;
 	margin-left: 2px;
 	width: 455px;
 	font-size: 22px;
@@ -214,7 +220,7 @@ body { font-family: 'Roboto', sans-serif; }
 .main__btn {
 	display: inline-block;
 	padding: 18px 37px 18px 21px;
-	margin-left: 3px;
+	margin-left: 4px;
 	font-size: 18px;
 	line-height: 21px;
 	text-decoration: none;
