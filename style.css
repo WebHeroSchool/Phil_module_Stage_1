@@ -212,7 +212,7 @@ body {
 	font: bold 66px/87px 'Pt Serif', Arial, Helvetica, Sans-serif;
 }
 
-.main__title_bg { background: linear-gradient(180deg, rgba(255, 255, 255, 1), #ECF3FF 15%); }
+.main__title_bg { background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, #ecf3ff 15%); }
 
 .main__subtitle {
 	margin-bottom: 40px;
