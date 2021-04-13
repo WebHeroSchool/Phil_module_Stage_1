@@ -84,31 +84,28 @@ body {
 .menu__item:last-child { margin-right: 10px; }
 
 
- .menu__item::after {
+.menu__item::after, .menu__item__active::after {
 	position: absolute;
 	left: 0;
 	display: block;
 	content: '';
-	width: 0;
 	height: 3px;
 	background-color: #0056EC;
+}
+
+ .menu__item::after {
+	width: 0;
 	transition: opacity .5s, width .5s;
 }
 
 .menu__item__active::after {
-	position: absolute;
-	left: 0;
-	display: block;
-	content: '';
 	width: 100%;
-	height: 3px;
-	background-color: #0056EC;
 }
 
 .menu__item:hover::after,
 .menu__item__active:hover::after {
-	opacity: 1;
 	width: 100%;
+	opacity: 1;
 }
 
 .menu__item:hover { opacity: .8; }
@@ -223,6 +220,7 @@ body {
 }
 
 .main__btn {
+	position: relative;
 	display: inline-block;
 	padding: 18px 37px 18px 21px;
 	margin-left: 4px;
@@ -242,6 +240,48 @@ body {
 	margin-left: 46.3%;
 	margin-bottom: 38px;
 	list-style-type: none;
+}
+
+.main__btn::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 6px solid #f700ff;
+	transform: translate(-50%, -50%);
+	animation: ring 1.5s infinite;
+}
+
+.main__btn:hover::after {
+	animation: none;
+	display: none;
+}
+
+.main__btn:hover {
+	transform: scale(1.2);
+}
+
+@keyframes ring {
+	0% {
+		width: 30px;
+		height: 30px;
+		opacity: 1;
+	}
+	100% {
+		width: 200px;
+		height: 200px;
+		opacity: 0;
+	}
+}
+
+@media(max-width: 1815px) {
+	.main__container {
+		padding-right: 63%;
+	}
 }
 
 .main__slider__item:not(last-child) { margin-right: 5px; }
@@ -318,6 +358,12 @@ body {
 	}
 
 	.main__subtitle {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1380px) {
+	.main__subtitle {
 		margin-bottom: 40px;
 		margin-left: 0;
 		width: 367px;
@@ -344,6 +390,11 @@ body {
 	.main__btn { padding-right: 27px; }
 }
 
+@media(max-width: 1115px) {
+	.main__subtitle {
+		width: 85%;
+	}
+}
 
 @media (max-width: 985px) {
 	.header {
@@ -355,9 +406,9 @@ body {
 		padding-bottom: 50px;
 		margin-bottom: 0;
 		padding-right: 0;
-		background-size: 65%;
-		background-position: top center;
 		text-align: center;
+		background-size: 65%;
+		background-position: top center;		
 	}
 
 	.main__title { padding-top: 65%; }
