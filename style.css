@@ -109,18 +109,6 @@ body { font-family: 'Roboto', sans-serif; }
 /* Меню бургер */
 #menu__toogle { display: none; }
 
-#menu__toogle:checked ~.menu__btn >.menu__btn__check { transform: rotate(45deg); }
-
-#menu__toogle:checked ~.menu__btn >.menu__btn__check::before {
-  top: 0;
-  transform: rotate(0);
-}
-
-#menu__toogle:checked ~.menu__btn >.menu__btn__check::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
 .menu__btn__check,
 .menu__btn__check::before,
 .menu__btn__check::after {
@@ -140,6 +128,18 @@ body { font-family: 'Roboto', sans-serif; }
 .menu__btn__check::after {
   content: '';
   top: 7px;
+}
+
+#menu__toogle:checked ~ .menu__btn >.menu__btn__check { transform: rotate(45deg); }
+
+#menu__toogle:checked ~ .menu__btn >.menu__btn__check::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toogle:checked ~ .menu__btn >.menu__btn__check::after {
+  top: 0;
+  transform: rotate(90deg);
 }
 
 #menu__toogle:checked ~.menu__box {
