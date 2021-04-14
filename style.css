@@ -130,14 +130,14 @@ body { font-family: 'Roboto', sans-serif; }
   top: 7px;
 }
 
-#menu__toogle:checked ~ .menu__btn >.menu__btn__check { transform: rotate(45deg); }
+#menu__toogle:checked ~ .menu__btn> .menu__btn__check { transform: rotate(45deg); }
 
-#menu__toogle:checked ~ .menu__btn >.menu__btn__check::before {
+#menu__toogle:checked ~ .menu__btn> .menu__btn__check::before {
   top: 0;
   transform: rotate(0);
 }
 
-#menu__toogle:checked ~ .menu__btn >.menu__btn__check::after {
+#menu__toogle:checked ~ .menu__btn> .menu__btn__check::after {
   top: 0;
   transform: rotate(90deg);
 }
@@ -156,7 +156,7 @@ body { font-family: 'Roboto', sans-serif; }
   transition: visibility 0.5s, top 0.5s;
 }
 
-#menu__toogle:checked ~.menu__box {
+#menu__toogle:checked ~ .menu__box {
   visibility: visible;
   z-index: 1;
   top: 0;
