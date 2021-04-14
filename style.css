@@ -129,6 +129,7 @@ body {
 
 #menu__toogle:checked ~ .menu__box {
 	visibility: visible;
+	z-index: 1;
 	top: 0;
 }
 
@@ -142,7 +143,7 @@ body {
 	right: 24px;
 	width: 25px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 2;
 }
 
 .menu__btn__check,
@@ -224,13 +225,13 @@ body {
 
 .main__btn {
 	position: relative;
-	z-index: -1;
 	display: inline-block;
 	padding: 18px 37px 18px 21px;
 	margin-left: 4px;
 	font-size: 18px;
 	line-height: 21px;
 	text-decoration: none;
+	cursor: pointer;
 	color: #fff;
 	background-color: #0056EC;
 	border-radius:	4px;
@@ -240,7 +241,7 @@ body {
 .main__btn::after {
 	content: '';
 	position: absolute;
-	z-index: -1;
+	z-index: -2;
 	top: 50%;
 	left: 50%;
 	width: 15px;
